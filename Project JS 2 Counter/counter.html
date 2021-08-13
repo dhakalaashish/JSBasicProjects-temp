@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #counter {
+            width: 80%;
+            margin: 100px auto;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            padding-bottom: 10px;
+        }
+
+        #value {
+            font-size: 5rem;
+            padding-bottom: 10px;
+        }
+
+        button {
+            font-size: 1.5rem;
+            margin: 0.5rem;
+            padding: 0.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="counter">
+        <h1>Counter</h1>
+        <h2 id="value">0</h2>
+        <button class="btn decrease">Decrease</button>
+        <button class="btn reset">Reset</button>
+        <button class="btn increase">Increase</button>
+    </section>
+
+    <script>
+        let count = 0;
+
+        let value = document.querySelector('#value');
+        let buttons = document.querySelectorAll('.btn');
+
+        buttons.forEach(function (button) {
+            button.addEventListener('click', (event) => {
+                let buttonClass = event.currentTarget.classList;
+
+                if (buttonClass.contains('increase')) {
+                    count++;
+                } else if (buttonClass.contains('decrease')) {
+                    count--;
+                } else {
+                    count = 0;
+                }
+                if (count > 0) {
+                    value.style.color = 'green';
+                } else if (count < 0) {
+                    value.style.color = 'red';
+                }
+                else {
+                    value.style.color = 'black';
+                }
+                value.innerText = count;
+            })
+        })
+    </script>
+</body>
+
+</html>
