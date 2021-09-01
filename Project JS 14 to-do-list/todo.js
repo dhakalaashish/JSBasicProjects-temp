@@ -177,9 +177,9 @@ function createListItem(id, value) {
                             </button>
                         </div>`
     //selecting edit button and delete button
-    const deleteBtn = article.querySelector('.delete-btn')
+    const deleteBtn = element.querySelector('.delete-btn')
     deleteBtn.addEventListener('click', deleteItem)
-    const editBtn = article.querySelector('.edit-btn')
+    const editBtn = element.querySelector('.edit-btn')
     editBtn.addEventListener('click', editItem)
     //append child
     list.appendChild(element);
