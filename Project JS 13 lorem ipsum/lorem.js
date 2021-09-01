@@ -52,7 +52,7 @@ const generateParagraph = async function (paras) {
 
 btn.addEventListener('click', async (e) => {
     e.preventDefault();
-    loremText.textContent = ``;
+    loremText.textContent = `${paragraphs}`;
     const paras = Number(input.value);
     if (isNaN(paras) || paras < 0) {
         let paragraphs = await generateParagraph(1);
@@ -63,6 +63,7 @@ btn.addEventListener('click', async (e) => {
         console.log(paragraphs);
         loremText.textContent = `${paragraphs}`;
     }
+
 })
 
 
