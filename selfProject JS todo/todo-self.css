@@ -1,0 +1,116 @@
+/* importing font --Roboto and Open sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/* variables */
+:root {
+  /* general */
+  --radius: 0.5rem;
+  --spacing: 0.2rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --transition: 0.3s all linear;
+  --max-width: 1170px;
+  --fixed-width: 620px;
+  /* font */
+  --font-header: "Roboto", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+  /* blue colors */
+  --clr-blue-1: #03045eff;
+  --clr-blue-2: #023e8aff;
+  --clr-blue-3: #0077b6ff;
+  --clr-blue-4: #0096c7ff;
+  --clr-blue-5: #00b4d8ff;
+  --clr-blue-6: #48cae4ff;
+  --clr-blue-7: #90e0efff;
+  --clr-blue-8: #ade8f4ff;
+  --clr-blue-9: #caf0f8ff;
+  /* pink */
+  --clr-piknk-1: #590d22ff;
+  --clr-piknk-2: #800f2fff;
+  --clr-piknk-3: #a4133cff;
+  --clr-piknk-4: #c9184aff;
+  --clr-piknk-5: #ff4d6dff;
+  --clr-piknk-6: #ff758fff;
+  --clr-piknk-7: #ff8fa3ff;
+  --clr-piknk-8: #ffb3c1ff;
+  --clr-piknk-9: #ffccd5ff;
+  --clr-piknk-10: #fff0f3ff;
+  /* black to white */
+  --clr-white-1: #fff;
+  --clr-white-2: #f8f9faff;
+  --clr-white-3: #f4f4f6ff;
+  --clr-white-4: #e9ecefff;
+  --clr-white-5: #e6e6e9ff;
+  --clr-white-6: #dee2e6ff;
+  --clr-grey-6: #ced4daff;
+  --clr-grey-5: #adb5bdff;
+  --clr-grey-4: #9999a1ff;
+  --clr-grey-3: #66666eff;
+  --clr-grey-2: #6c757dff;
+  --clr-grey-1: #495057ff;
+  --clr-black-3: #343a40ff;
+  --clr-black-2: #212529ff;
+  --clr-black-1: #000;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: var(--clr-grey-1);
+  background-color: var(--clr-white-6);
+  font-family: var(--font-body);
+}
+.section-center {
+  width: 70vw;
+  background-color: var(--clr-white-1);
+  margin: 0 auto;
+  margin-top: 100px;
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  text-align: center;
+}
+.section-center:hover {
+  box-shadow: var(--dark-shadow);
+}
+h1 {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  font-family: var(--font-header);
+  font-size: 2rem;
+}
+.message {
+  margin: 0 10px 20px 10px;
+  border-radius: var(--radius);
+  height: 1.3rem;
+}
+.warn {
+  background: lightpink;
+  color: red;
+}
+.success {
+  background-color: lightgreen;
+  color: green;
+}
+
+.container {
+  visibility: hidden;
+}
+.show-container {
+  visibility: visible;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+}
+.clear-items {
+  padding-bottom: 10px;
+}

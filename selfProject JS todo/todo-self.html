@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Todo List</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="todo-self.css">
+</head>
+
+<body>
+
+    <section class="section-center">
+        <h1>To-do List</h1>
+        <p class="message"></p>
+        <div class="form-control">
+            <form action="" input="form">
+                <input type="text" name="add" id="text-box">
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
+        </div>
+        <div class="container">
+            <div class="item-container"></div>
+            <div class="clear-items">
+                <button class="clear-btn">-------- clear items ---------</button>
+            </div>
+        </div>
+    </section>
+    <script src="todo-self.js"></script>
+</body>
+
+</html>
